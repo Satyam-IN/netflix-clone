@@ -1,0 +1,439 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+.main{
+    background-image: url(images/bg.jpeg);
+    height: 100vh;  
+    position: relative;
+    background-position: center center center;
+    bottom: -12px;
+    background-repeat: no-repeat;
+    background-size: max(1100px, 100vw);
+}
+.main .box{
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    opacity: 1.6;
+    background-color: black;
+    inset: 0;
+
+      background:
+        radial-gradient(
+            ellipse at center 10%,
+            rgba(0,0,0,0.15) 0%,
+            rgba(0,0,0,0.35) 50%,
+            rgba(0,0,0,0.8) 100%
+        ),
+
+              linear-gradient(
+            to bottom,
+            rgba(0,0,0,0.9),
+            rgba(0,0,0,0.25),
+            rgba(0,0,0,0.9)
+        );
+}
+.main nav svg{
+    fill: rgb(255, 6, 6);
+    height: 40px;
+    z-index: 5;
+    
+}
+.main nav{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    max-width: 70vw;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.main nav .lang{
+    position: relative;
+    display: inline-block;
+}
+.lang svg{
+    position: absolute;
+    color: white;
+    z-index: 2;
+    top: -4px;
+    left: 6px;
+    pointer-events: none;
+}
+.lang select{
+    background-color: rgb(19, 18, 18);
+    color: white;
+    width: 170px;
+    padding-left: 22px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 15px;
+}
+.lang select option{
+    background-color: white;
+    color: black;
+}
+.main nav button{
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    padding: 4px 12px;
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.main nav .group{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.content h1{
+    font-size: 64px;
+    max-width: 600px;
+    text-align: center;
+}
+.content p{
+    padding-top: 8px;
+}
+
+.login input{
+    background-color: black;
+    color: rgba(244, 237, 237, 0.355);
+    width: 360px;
+    height: 53px;
+    padding: 0 16px;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-radius: 4px;
+
+}
+.login input::placeholder{
+    color: rgb(197, 193, 193);
+}
+.login button{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 24px;
+    height: 53px;
+    border: none;
+    padding: 0 28px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.login{
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+.login input{
+    background-color: rgba(0, 0, 0, 0.318)
+}
+.login button:hover{
+    background-color: rgb(222, 9, 9);
+}
+.button button:hover{
+    background-color: rgb(222, 9, 9);
+}
+
+/* .all{
+    display: grid;
+} */
+@media screen and (max-width: 632px) {
+   .login{
+    flex-direction: column;
+   }
+} 
+.stroke{
+    height: 6.25rem;
+    width: 100%;
+    border-top: 4px solid red;
+    border-radius: 110% 110% 0 0;
+    position: relative;
+    top: -15px;
+    z-index: 3;
+    background: radial-gradient(
+        ellipse at top,
+        #1c2d74 -70%,
+        #0b1030 25%,
+        #000 60%
+    );
+}
+
+.attention {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 3;
+    top: -25px;
+    height: 500px;
+    height: auto;
+    /* background-color: purple; */
+    width: 100%;
+    max-width: 1017px;
+    margin-left: 21vw;
+    transform: scale(1.1);
+}
+
+.attention h2{
+    position: relative;
+   font-size: 28px;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-bottom: 32px;
+   margin-top: 15px;
+}
+
+.slider {
+    padding: 18px 18px 18px 40px;
+    display: flex;
+    gap: 46px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    position: relative;
+    flex: 0 0 auto;
+    transition: transform 0.3s ease, box-shadow ease;
+}
+.card img{
+    height: 260px;
+    border-radius: 20px;
+    display: block;
+    object-fit: cover;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(255, 255, 255 255, 0.2);
+}    
+
+.number {
+    position: absolute;   
+    margin-left: -33px;
+    top: 99px;
+    font-size: 124px;
+    font-family: sans-serif;
+    font-weight: 1000;
+    color: black;
+    -webkit-text-stroke: 1px white;
+}
+
+.lang h2{
+    font-size: 31px;
+}
+
+.card2{
+    /* border: 2px solid white; */
+    position: relative;
+    height: 32vh;
+    width: 15vw;
+    border-radius: 15px;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(48, 19, 116, 0.434),
+            rgba(48, 19, 116, 0.434),
+            rgba(48, 19, 116, 0.434),
+            /* rgba(47, 122, 214, 0.63), */
+            rgba(137, 10, 76, 0.45)
+        )
+}
+
+.det{
+    color: white;
+    padding-top: 26px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.card2 h1{
+    color: rgb(172, 168, 168);
+    font-size: 14px;
+    padding-top: 22px;
+    padding-left: 20px;
+    padding-right: 13px;
+    width: 12vw;
+}
+
+.svgedit{
+    margin-top: 39px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: absolute;
+    top: 180px;
+    left: 179px;
+}
+.svgedit svg{
+    transform: scale(0.9);
+}
+
+.card2dis{
+    display: flex;
+    gap: 10px;
+}
+
+.rec{
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 18px;
+}
+
+.recbox{
+    background-color: rgb(44, 42, 42);
+    border: solid rgb(44, 42, 42);
+    height: 70px;
+    width: 56vw;
+    color: white;
+    cursor: pointer;
+}
+.recbox:hover{
+    background-color: rgb(68, 65, 65);
+    border: solid rgb(68, 65, 65);
+}
+
+.recbox h3{
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 400;
+
+}
+
+.reccont{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.content[data-attribute="cng"] {
+    margin-top: 70px;
+}
+
+.content[data-attribute="cng"] p{
+    font-size: 14px;
+}
+.login[data-attribute="log"] input{
+    height: 40px;
+    width: 460px;
+}
+.login[data-attribute="log"] ::placeholder{
+    font-size: 14px;
+}
+.content[data-attribute="cng"] button{
+    height: 41px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login[data-attribute="log"] {
+    margin-top: -6px;
+}
+
+.footer{
+    color: rgb(177, 172, 172);
+    margin-top: 140px;
+    margin-left: 340px;
+    margin-right: 390px;
+}
+.footer > p {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+.footer p > span{
+    text-decoration: underline;
+}
+.links{
+    margin-top: 80px;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: column;
+    font-size: 14px;
+    gap: 10px;
+    text-decoration: underline;
+}
+.language{
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+}
+.language svg{
+    position: absolute;
+    color: white;
+    z-index: 2;
+    top: 8px;
+    left: 6px;
+    pointer-events: none;
+}
+.language select{
+    background-color: rgb(19, 18, 18);
+    color: white;
+    width: 170px;
+    padding-left: 22px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 15px;
+}
+.language select option{
+    background-color: white;
+    color: black;
+}
+.netflixindia{
+    margin-top: 30px;
+    font-size: 15px;
+}
+.footer h6{
+    font-size: 10px;
+    margin-top: 30px;
+}
