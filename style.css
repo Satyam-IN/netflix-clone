@@ -175,11 +175,7 @@ body{
 /* .all{
     display: grid;
 } */
-@media screen and (max-width: 632px) {
-   .login{
-    flex-direction: column;
-   }
-} 
+
 .stroke{
     height: 6.25rem;
     width: 100%;
@@ -438,6 +434,12 @@ body{
     margin-top: 30px;
 }
 
+
+@media screen and (max-width: 632px) {
+   .login{
+    flex-direction: column;
+   }
+} 
 
 
 /* =========================
